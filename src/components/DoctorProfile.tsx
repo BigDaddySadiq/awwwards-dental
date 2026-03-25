@@ -33,11 +33,10 @@ export default function DoctorProfile() {
   return (
     <section ref={container} id="about-doctor" className="w-full py-24 md:py-32 px-6 md:px-12 bg-[#0c0e12] flex flex-col md:flex-row items-center gap-12 md:gap-24 overflow-hidden">
       <div className="w-full md:w-5/12 aspect-[3/4] rounded-sm overflow-hidden border border-border/30 bg-card profile-img relative group">
-        <div className="absolute inset-0 bg-primary/20 mix-blend-overlay group-hover:bg-transparent transition-colors duration-1000 z-10" />
-        {/* Placeholder image */}
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10" />
-        <div className="w-full h-full bg-[#161a20] flex items-center justify-center">
-           <p className="text-muted-foreground uppercase tracking-widest text-xs opacity-40">Dr. K. Manoj Kumar (Image)</p>
+        <div className="absolute inset-0 bg-primary/20 mix-blend-overlay group-hover:bg-transparent transition-colors duration-1000 z-10 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10 pointer-events-none" />
+        <div className="w-full h-full bg-[#161a20]">
+           <img src="/doctor_profile.png" alt="Dr. K. Manoj Kumar" className="w-full h-full object-cover" />
         </div>
       </div>
 

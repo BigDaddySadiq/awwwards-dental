@@ -54,8 +54,7 @@ export default function Hero() {
     <section ref={container} className="relative h-screen w-full flex flex-col justify-end pb-12 md:pb-24 px-6 md:px-12 overflow-hidden bg-background">
       {/* Background Image Wrapper */}
       <div className="absolute inset-0 z-0 overflow-hidden opacity-40">
-        <div className="hero-bg hero-img w-full h-[120%] bg-[#121418] relative -top-[10%] bg-cover bg-center">
-          {/* We use a subtle gradient to blend since we lack an actual image */}
+        <div className="hero-bg hero-img w-full h-[120%] relative -top-[10%] bg-cover bg-center" style={{ backgroundImage: "url('/hero_bg.png')" }}>
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(203,168,118,0.08)_0%,transparent_60%)]" />
         </div>

@@ -78,15 +78,16 @@ export default function AboutVibe() {
       </div>
 
       <div className="w-full md:w-1/2 relative min-h-[50vh] flex flex-col items-center justify-center">
-        {/* Placeholder for a high-end image using CSS luxury aesthetic */}
-        <div className="w-[80%] h-[120%] absolute top-0 -translate-y-12 bg-card rounded-sm overflow-hidden border border-border/50 parallax-text flex items-center justify-center group">
-          <div className="absolute inset-0 bg-primary/5 group-hover:bg-primary/10 transition-colors duration-1000" />
-          <p className="text-muted-foreground uppercase tracking-widest text-xs rotate-90 opacity-40">Visual Placeholder</p>
+        {/* Main luxury image */}
+        <div className="w-[80%] h-[120%] absolute top-0 -translate-y-12 bg-card rounded-sm overflow-hidden border border-border/50 parallax-text flex items-center justify-center shadow-2xl">
+          <img src="/about_vibe_1.png" alt="Spa-like interior" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-primary/5 hover:bg-transparent transition-colors duration-1000" />
         </div>
         
-        <div className="w-[60%] h-[80%] absolute bottom-0 -left-12 translate-y-24 bg-[#0a0c0f] rounded-sm overflow-hidden border border-border/80 z-10 flex items-center justify-center group shadow-2xl">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.02)_0%,transparent_60%)]" />
-          <p className="text-muted-foreground uppercase tracking-widest text-xs opacity-40">Visual Placeholder</p>
+        {/* Accent image */}
+        <div className="w-[60%] h-[80%] absolute bottom-0 -left-12 translate-y-24 bg-[#0a0c0f] rounded-sm overflow-hidden border border-border/80 z-10 flex items-center justify-center shadow-2xl">
+          <img src="/about_vibe_2.png" alt="Dental Technology" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.02)_0%,transparent_60%)] pointer-events-none" />
         </div>
       </div>
     </section>
